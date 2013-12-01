@@ -1,4 +1,5 @@
-sass-hack-denver
+Sass Hack Denver
 ================
 
-A site for Denver Sass Hacking
+A bi-weekly, informal get-together
+for hacking on Sass projects.
