@@ -5,12 +5,6 @@ $fonts: (
   SourceSansPro: (
     regular: 'sans/sourcesanspro-light-webfont',
     bold: 'sans/sourcesanspro-lightitalic-webfont',
-    italic: 'sans/sourcesanspro-bold-webfont',
-    bold italic: 'sans/sourcesanspro-bolditalic-webfont',
-  ),
-  SourceCodePro: (
-    regular: 'code/sourcecodepro-regular-webfont',
-    italic: 'code/sourcecodepro-bold-webfont',
   ),
   BaskervilleAmp: (
     regular: 'amp/Baskerville-amp-webfont',
@@ -36,10 +30,8 @@ $fonts: (
 
 $sans-stack   : "Helvetica Neue", Helvetica, Arial, sans-serif;
 $amp-stack    : Baskerville, Palatino, Cambria, Georgia, serif;
-$mono-stack   : Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
 
 @mixin sans { font-family: 'FranklinGothicFSBook', $sans-stack; }
-@mixin mono { font-family: 'FranklinGothicFSBook', $mono-stack; }
 @mixin amp-family {
   font-family: 'BaskervilleAmp', $amp-stack;
   font-weight: normal;
@@ -47,7 +39,6 @@ $mono-stack   : Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "D
 }
 
 %sans { @include sans; }
-%mono { @include mono; }
 %amp { @include amp-family; }
 
 // Mixins
