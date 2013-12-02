@@ -241,6 +241,10 @@ html, body {
   display: inline-block;
 }
 
+.next-title {
+  margin-right: .4em;
+}
+
 .dtstart {
   font-weight: bold;
 }
