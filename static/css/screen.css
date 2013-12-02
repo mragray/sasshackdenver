@@ -1,0 +1,337 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url('../fonts/sans/sourcesanspro-light-webfont.woff?1383119483') format("woff"), url('../fonts/sans/sourcesanspro-light-webfont.ttf?1383119483') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url('../fonts/sans/sourcesanspro-lightitalic-webfont.woff?1383119483') format("woff"), url('../fonts/sans/sourcesanspro-lightitalic-webfont.ttf?1383119483') format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url('../fonts/sans/sourcesanspro-bold-webfont.woff?1383119483') format("woff"), url('../fonts/sans/sourcesanspro-bold-webfont.ttf?1383119483') format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url('../fonts/sans/sourcesanspro-bolditalic-webfont.woff?1383119483') format("woff"), url('../fonts/sans/sourcesanspro-bolditalic-webfont.ttf?1383119483') format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SourceCodePro";
+  src: url('../fonts/code/sourcecodepro-regular-webfont.woff?1383119483') format("woff"), url('../fonts/code/sourcecodepro-regular-webfont.ttf?1383119483') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceCodePro";
+  src: url('../fonts/code/sourcecodepro-bold-webfont.woff?1383119483') format("woff"), url('../fonts/code/sourcecodepro-bold-webfont.ttf?1383119483') format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BaskervilleAmp";
+  src: url('../fonts/amp/Baskerville-amp-webfont.woff?1383119448') format("woff"), url('../fonts/amp/Baskerville-amp-webfont.ttf?1383119448') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+[role='banner'] span, .next-title, .dtstart, .subtitle, html {
+  font-family: "FranklinGothicFSBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.amp {
+  font-family: "BaskervilleAmp", Baskerville, Palatino, Cambria, Georgia, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a:link, a:visited {
+  color: #ff0080;
+}
+a:hover, a:focus, a:active {
+  color: deepskyblue;
+}
+
+[role='banner'] span, .next-title, .dtstart, .subtitle {
+  color: #4c4c4c;
+}
+
+[role='banner'] span {
+  font-size: 2.45833rem;
+  line-height: 3rem;
+}
+
+.next-title, .dtstart, .subtitle {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+[role='main'] strong {
+  font-weight: bold;
+}
+[role='main'] em, [role='main'] blockquote {
+  font-style: italic;
+}
+[role='main'] p, [role='main'] ul, [role='main'] ol, [role='main'] pre, [role='main'] blockquote {
+  margin-bottom: 1.5rem;
+}
+[role='main'] p:empty {
+  display: none;
+}
+[role='main'] ul {
+  list-style-type: disc;
+}
+[role='main'] ol {
+  list-style-type: decimal;
+}
+[role='main'] blockquote {
+  padding: 0 1.125rem;
+  border-left: 0.375rem solid;
+}
+[role='main'] blockquote em {
+  font-style: normal;
+}
+[role='main'] ul ul, [role='main'] ul ol, [role='main'] ol ul, [role='main'] ol ol, [role='main'] blockquote ul, [role='main'] blockquote ol {
+  margin-left: 1.5rem;
+}
+
+html {
+  font-size: 150%;
+  line-height: 1.5em;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background: #f8f8f8;
+  color: #666666;
+  text-shadow: 0 1px 0 white;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+@-moz-keyframes stripe {
+  0% {
+    background-position: 600rem 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+@-webkit-keyframes stripe {
+  0% {
+    background-position: 600rem 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes stripe {
+  0% {
+    background-position: 600rem 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+[role='banner'] {
+  padding-top: 3.75rem;
+  padding-bottom: 3rem;
+  background: -moz-linear-gradient(left, #ff0080, #00bfff, #ff0080) repeat-x 0 0;
+  background: -o-linear-gradient(left, #ff0080, #00bfff, #ff0080) repeat-x 0 0;
+  background: -webkit-linear-gradient(left, #ff0080, #00bfff, #ff0080) repeat-x 0 0;
+  background: linear-gradient(to right, #ff0080, #00bfff, #ff0080) repeat-x 0 0;
+  -moz-background-size: 600rem 0.75rem;
+  -o-background-size: 600rem 0.75rem;
+  -webkit-background-size: 600rem 0.75rem;
+  background-size: 600rem 0.75rem;
+  -moz-animation: stripe 600s linear infinite;
+  -webkit-animation: stripe 600s linear infinite;
+  animation: stripe 600s linear infinite;
+  font-size: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+[role='banner'] .s, [role='banner'] .h {
+  font-weight: bold;
+}
+[role='banner'] .s {
+  color: #007299;
+}
+[role='banner'] .h {
+  color: #0098cc;
+}
+[role='banner'] .d {
+  color: rgba(255, 0, 128, 0.5);
+}
+
+[role='main'] {
+  *zoom: 1;
+  max-width: 37.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+[role='main']:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.next {
+  margin-bottom: 3rem;
+  border-top-width: 0.5rem;
+  border-top-style: solid;
+  padding-top: 1rem;
+  border-bottom-width: 0.5rem;
+  border-bottom-style: solid;
+  padding-bottom: 1rem;
+  padding-left: 1.66667%;
+  padding-right: 1.66667%;
+  border-color: #ff0080;
+  text-align: center;
+}
+
+.next-title, .dtstart {
+  display: inline-block;
+}
+
+.dtstart {
+  font-weight: bold;
+}
+
+.location {
+  display: block;
+}
+
+.org {
+  font-weight: bold;
+}
+
+.description {
+  padding-left: 1.66667%;
+  padding-right: 1.66667%;
+  margin-bottom: 3rem;
+}
+
+[role='contentinfo'] {
+  background: -moz-linear-gradient(left, #ff0080, #00bfff, #ff0080);
+  background: -o-linear-gradient(left, #ff0080, #00bfff, #ff0080);
+  background: -webkit-linear-gradient(left, #ff0080, #00bfff, #ff0080);
+  background: linear-gradient(to right, #ff0080, #00bfff, #ff0080);
+  -moz-background-size: 600rem auto;
+  -o-background-size: 600rem auto;
+  -webkit-background-size: 600rem auto;
+  background-size: 600rem auto;
+  -moz-animation: stripe 600s linear infinite;
+  -webkit-animation: stripe 600s linear infinite;
+  animation: stripe 600s linear infinite;
+  color: rgba(229, 229, 229, 0.75);
+  text-shadow: 0 -1px 0 rgba(102, 102, 102, 0.25);
+}
+[role='contentinfo'] a:link, [role='contentinfo'] a:visited {
+  color: #e5e5e5;
+}
+[role='contentinfo'] a:hover, [role='contentinfo'] a:focus, [role='contentinfo'] a:visited {
+  color: white;
+}
+
+.footwrap {
+  *zoom: 1;
+  max-width: 37.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footwrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.credit {
+  *zoom: 1;
+  clear: both;
+  padding-left: 1.66667%;
+  padding-right: 1.66667%;
+  float: none;
+  width: auto;
+  font-size: 0.66667rem;
+  line-height: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+.credit:after {
+  content: " ";
+  display: block;
+  clear: both;
+}

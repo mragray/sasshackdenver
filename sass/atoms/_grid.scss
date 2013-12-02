@@ -1,0 +1,11 @@
+// Grid
+// ====
+
+$susy: (
+  columns: 6,
+  container: rhythm(25),
+  show-grids: hide,
+  gutter-position: inside,
+);
+
+$grid-padding: rhythm(1);

@@ -1,0 +1,32 @@
+// Banner
+// ======
+
+$banner-colors: $pink, $blue, $pink;
+$banner-gradient: linear-gradient(to right, $banner-colors...);
+$banner-size: 100rem * length($banner-colors) * 2;
+
+@mixin stripe {
+  @include animation(stripe 600s linear infinite);
+}
+
+@include keyframes(stripe) {
+  0% { background-position: $banner-size 0; }
+  100% { background-position: 0 0; }
+}
+
+[role='banner'] {
+  @include rhythm-padding(2.5, 2);
+  @include background($banner-gradient repeat-x 0 0);
+  @include background-size($banner-size rhythm(.5));
+  @include stripe;
+  font-size: 0;
+  text-transform: uppercase;
+  text-align: center;
+
+  span { @extend %h1; }
+
+  .s, .h { font-weight: bold; }
+  .s { color: color(darker $accent); }
+  .h { color: color(dark $accent); }
+  .d { color: color($alt, .5); }
+}

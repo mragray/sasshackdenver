@@ -1,0 +1,29 @@
+// Main
+// ====
+
+[role='main'] {
+  @extend %body;
+  @include container;
+}
+
+.next {
+  @include trailer(2);
+  @include h-borders($xxxsmallpx, 1);
+  @include gutters;
+  border-color: $alt;
+  text-align: center;
+}
+.next-title, .dtstart {
+  @extend %h2;
+  display: inline-block;
+}
+.dtstart { font-weight: bold; }
+
+.location { display: block; }
+.org { font-weight: bold; }
+
+.description {
+  @include gutters;
+  @include trailer(2);
+}
+.subtitle { @extend %h2; }

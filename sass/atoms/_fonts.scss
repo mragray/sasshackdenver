@@ -1,0 +1,84 @@
+// Fonts
+// =====
+
+$fonts: (
+  SourceSansPro: (
+    regular: 'sans/sourcesanspro-light-webfont',
+    bold: 'sans/sourcesanspro-lightitalic-webfont',
+    italic: 'sans/sourcesanspro-bold-webfont',
+    bold italic: 'sans/sourcesanspro-bolditalic-webfont',
+  ),
+  SourceCodePro: (
+    regular: 'code/sourcecodepro-regular-webfont',
+    italic: 'code/sourcecodepro-bold-webfont',
+  ),
+  BaskervilleAmp: (
+    regular: 'amp/Baskerville-amp-webfont',
+  ),
+);
+
+@mixin fonts(
+  $fonts: $fonts
+) {
+  @each $name, $type in $fonts {
+    @each $style, $path in $type {
+      $style: if($style == normal or $style == regular, null, $style);
+      $font: join($name $path, $style);
+      @include font($font);
+    }
+  }
+}
+
+@include fonts;
+
+// Stacks
+// ------
+
+$sans-stack   : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$amp-stack    : Baskerville, Palatino, Cambria, Georgia, serif;
+$mono-stack   : Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+
+@mixin sans { font-family: 'FranklinGothicFSBook', $sans-stack; }
+@mixin mono { font-family: 'FranklinGothicFSBook', $mono-stack; }
+@mixin amp-family {
+  font-family: 'BaskervilleAmp', $amp-stack;
+  font-weight: normal;
+  font-style: normal;
+}
+
+%sans { @include sans; }
+%mono { @include mono; }
+%amp { @include amp-family; }
+
+// Mixins
+// ------
+
+@mixin display(
+  $include: false
+) {
+  @if $include {
+    @include sans;
+  } @else {
+    @extend %sans;
+  }
+}
+
+@mixin body(
+  $include: false
+) {
+  @if $include {
+    @include sans;
+  } @else {
+    @extend %sans;
+  }
+}
+
+@mixin amp(
+  $include: false
+) {
+  @if $include {
+    @include amp-family;
+  } @else {
+    @extend %amp;
+  }
+}

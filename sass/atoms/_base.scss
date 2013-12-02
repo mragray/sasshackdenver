@@ -1,0 +1,14 @@
+// Base Styles
+// ===========
+
+@include establish-baseline;
+* { @include box-sizing(border-box); }
+
+html {
+  @include body;
+  background: $bg-color;
+  color: $text-color;
+  text-shadow: 0 1px 0 white;
+}
+
+html, body { min-height: 100%; }
