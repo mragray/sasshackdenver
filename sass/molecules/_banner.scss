@@ -15,7 +15,7 @@ $banner-size: 100rem * length($banner-colors) * 2;
 }
 
 [role='banner'] {
-  @include rhythm-padding(2.5, 2);
+  @include rhythm-padding(2, 1.5);
   @include background($banner-gradient repeat-x 0 0);
   @include background-size($banner-size rhythm(.5));
   @include stripe;

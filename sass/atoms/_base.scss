@@ -1,7 +1,8 @@
 // Base Styles
 // ===========
 
-@include establish-baseline;
+@include establish-baseline(16px);
+@include breakpoint(45em) { @include establish-baseline; }
 * { @include box-sizing(border-box); }
 
 html {
