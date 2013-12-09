@@ -7,24 +7,26 @@
 }
 
 .next {
-  @include rhythm-padding;
+  @include rhythm-padding(.5, .75);
   @include trailer;
   @include gutters;
   @include box-shadow(inset 0 0 2px 1px color(darkest $alt, .25));
   background: color(lightest $alt, .25);
 }
-.next-title, .dtstart {
-  @extend %h2;
-  display: inline-block;
+.next-title {
+  @extend %alt-text;
 }
-.next-title { margin-right: .4em; }
-.dtstart { font-weight: bold; }
+
+.dtstart {
+  @extend %h2;
+  font-weight: bold;
+}
 
 .location { display: block; }
 .org { font-weight: bold; }
 
 .description {
   @include gutters;
-  @include trailer(2);
+  @include trailer;
 }
 .subtitle { @extend %h3; }

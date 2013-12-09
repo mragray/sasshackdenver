@@ -1,24 +1,11 @@
 // Contentinfo
 // ===========
 
-[role='contentinfo'] {
-  @include background($banner-gradient);
-  @include background-size($banner-size auto);
-  @include stripe;
-  color: color(lightest, .75);
-  text-shadow: 0 -1px 0 color(dark, .25);
-
-  a {
-    &:link, &:visited { color: color(lightest); }
-    &:hover, &:focus, &:visited { color: white; }
-  }
-}
-
-.footwrap { @include container; }
+[role='contentinfo'] { @include container; }
 
 .credit {
   @include full;
   @include font-size(xsmall);
-  @include rhythm-padding(1);
-  text-align: center;
+  @include leading-border(3px, .25);
+  border-color: color(lightest $alt, .5);
 }
