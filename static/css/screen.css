@@ -237,7 +237,7 @@ html, body {
 @media (min-width: 45em) {
   [role='main'] {
     *zoom: 1;
-    max-width: 37.5rem;
+    max-width: 33rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -252,8 +252,8 @@ html, body {
   padding-top: 0.75rem;
   padding-bottom: 1.125rem;
   margin-bottom: 1.5rem;
-  padding-left: 2.77778%;
-  padding-right: 2.77778%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   -moz-box-shadow: inset 0 0 2px 1px rgba(50, 0, 25, 0.25);
   -webkit-box-shadow: inset 0 0 2px 1px rgba(50, 0, 25, 0.25);
   box-shadow: inset 0 0 2px 1px rgba(50, 0, 25, 0.25);
@@ -273,14 +273,14 @@ html, body {
 }
 
 .description {
-  padding-left: 2.77778%;
-  padding-right: 2.77778%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   margin-bottom: 1.5rem;
 }
 
 [role='contentinfo'] {
   *zoom: 1;
-  max-width: 37.5rem;
+  max-width: 33rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -293,8 +293,8 @@ html, body {
 .credit {
   *zoom: 1;
   clear: both;
-  padding-left: 2.77778%;
-  padding-right: 2.77778%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   float: none;
   width: auto;
   font-size: 0.66667rem;
