@@ -14,7 +14,8 @@
   background: color(lightest $alt, .25);
 }
 .next-title {
-  @extend %alt-text;
+  @include gutters;
+  @include font-size(xsmall);
 }
 
 .dtstart {

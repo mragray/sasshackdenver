@@ -37,7 +37,7 @@ GEM
       listen (~> 1.1.0)
     sassy-math (1.5)
       compass (~> 0.11)
-    susy (2.0.0.alpha.5)
+    susy (2.0.0.alpha.6)
       sass (~> 3.3.0.rc.1)
 
 PLATFORMS
@@ -49,4 +49,4 @@ DEPENDENCIES
   compass (~> 0.13.alpha.12)
   modular-scale (~> 1.0.2)
   sass (~> 3.3.0.rc.2)
-  susy (= 2.0.0.alpha.5)
+  susy (= 2.0.0.alpha.6)

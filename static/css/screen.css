@@ -54,33 +54,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-.next-title {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
-.next-title {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
 @font-face {
   font-family: "SourceSansPro";
-  src: url('../fonts/sans/sourcesanspro-light-webfont.woff?1383119483') format("woff"), url('../fonts/sans/sourcesanspro-light-webfont.ttf?1383119483') format("truetype");
+  src: url('../fonts/sans/sourcesanspro-light-webfont.woff?1386694649') format("woff"), url('../fonts/sans/sourcesanspro-light-webfont.ttf?1386694649') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "SourceSansPro";
-  src: url('../fonts/sans/sourcesanspro-lightitalic-webfont.woff?1383119483') format("woff"), url('../fonts/sans/sourcesanspro-lightitalic-webfont.ttf?1383119483') format("truetype");
+  src: url('../fonts/sans/sourcesanspro-lightitalic-webfont.woff?1386694649') format("woff"), url('../fonts/sans/sourcesanspro-lightitalic-webfont.ttf?1386694649') format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "BaskervilleAmp";
-  src: url('../fonts/amp/Baskerville-amp-webfont.woff?1383119448') format("woff"), url('../fonts/amp/Baskerville-amp-webfont.ttf?1383119448') format("truetype");
+  src: url('../fonts/amp/Baskerville-amp-webfont.woff?1386694649') format("woff"), url('../fonts/amp/Baskerville-amp-webfont.ttf?1386694649') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -258,6 +246,13 @@ html, body {
   -webkit-box-shadow: inset 0 0 2px 1px rgba(50, 0, 25, 0.25);
   box-shadow: inset 0 0 2px 1px rgba(50, 0, 25, 0.25);
   background: rgba(255, 204, 229, 0.25);
+}
+
+.next-title {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  font-size: 0.66667rem;
+  line-height: 1.5rem;
 }
 
 .dtstart {
